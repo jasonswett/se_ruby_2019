@@ -6,7 +6,7 @@ words = text.split
 cwords = []
 words.each do |w|
   w.gsub!(/[,\?\.‘’“”\:;!\(\)]/, '')
-  cwords &lt;&lt; w.downcase
+  cwords << w.downcase
 end
 words = cwords
 words.sort!
